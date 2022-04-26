@@ -1,0 +1,12 @@
+python run_qa_2.py \
+  --model_name_or_path hfl/chinese-macbert-base \
+  --context_file /data/ADL/hw2/context.json \
+  --train_file /data/ADL/hw2/my_train.json \
+  --validation_file /data/ADL/hw2/my_valid.json \
+  --do_train \
+  --do_eval \
+  --per_device_train_batch_size 1 \
+  --gradient_accumulation_steps 2 \
+  --num_train_epochs 2 \
+  --max_steps 20000 \
+  --output_dir macbert_qa_scratch

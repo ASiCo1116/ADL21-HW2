@@ -1,0 +1,11 @@
+python3.8 run_qa.py \
+  --model_name_or_path macbert_qa_2 \
+  --context_file /data/ADL/hw2/context.json \
+  --context_id_file prediction.choice.csv \
+  --test_file /data/ADL/hw2/my_test.json \
+  --do_predict \
+  --per_device_train_batch_size 1 \
+  --gradient_accumulation_steps 2 \
+  --output_dir macbert_qa \
+  --dataloader_pin_memory=False \
+  --dataloader_num_workers 4

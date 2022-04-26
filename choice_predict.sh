@@ -1,0 +1,13 @@
+python3.8 swag_predict.py \
+    --model_name_or_path bert_base_chinese_choice \
+    --do_predict \
+    --context_file /data/ADL/hw2/context.json \
+    --prediction_file /data/ADL/hw2/my_test.json \
+    --max_seq_length 384 \
+    --learning_rate 3e-5 \
+    --num_train_epochs 3 \
+    --dataloader_pin_memory=False \
+    --dataloader_num_workers 4 \
+    --output_dir bert_base_chinese_choice \
+    --per_device_eval_batch_size 2 \
+    --seed 1116

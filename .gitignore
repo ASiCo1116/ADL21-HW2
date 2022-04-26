@@ -1,0 +1,7 @@
+bert_base_chinese_choice
+bert_base_chinese_qa
+macbert_qa
+macbert_qa_2
+**/*.csv
+*.zip
+*.json

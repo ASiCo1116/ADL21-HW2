@@ -1,0 +1,15 @@
+python3.8 run_swag.py \
+    --model_name_or_path bert-base-chinese \
+    --train_file /data/ADL/hw2/my_train.json \
+    --validation_file /data/ADL/hw2/my_valid.json \
+    --do_train \
+    --do_eval \
+    --context_file /data/ADL/hw2/context.json \
+    --max_seq_length 384 \
+    --learning_rate 3e-5 \
+    --num_train_epochs 3 \
+    --output_dir test \
+    --per_device_train_batch_size 1 \
+    --per_device_eval_batch_size 1 \
+    --gradient_accumulation_steps 2 \
+    --seed 1116
